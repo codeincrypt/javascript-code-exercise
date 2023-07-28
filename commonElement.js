@@ -46,6 +46,12 @@ const commonElements_2 = (arr1, arr2, arr3) => {
 console.log(commonElements_2(A, B, C))   // 👉️ [ 20, 80 ]
 
 
+/**
+ * Finds the common elements in multiple arrays.
+ *
+ * @param {...Array} arr - The arrays to find common elements from.
+ * @return {Array} - An array containing the common elements.
+ */
 const commonElementES6_2 = (...arr) => {
 	let array = [...arr];
 	let newArr = array.reduce((x, y) => x.filter((z) => y.includes(z)));
