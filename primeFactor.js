@@ -21,7 +21,7 @@ const primeFactors1 = (num) => {
 }
 
 console.log(primeFactors1(6)); // 👉️  [ 1, 2, 3 ]
-console.log(primeFactors1(15)); // 👉️  [ 1, 3 ]
+console.log(primeFactors1(9)); // 👉️  [ 1, 3 ]
 
 function primeFactors2(n) {
   const factors = [];
@@ -42,5 +42,5 @@ function primeFactors2(n) {
   return factors;
 }
 
-console.log(primeFactors2(6)); // 👉️  [ 1, 2, 3 ]
-console.log(primeFactors2(15)); // 👉️  [ 1, 3 ]
+console.log(primeFactors2(6)); // 👉️  [ 2, 3 ]
+console.log(primeFactors2(15)); // 👉️  [ 3, 5 ]
