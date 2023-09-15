@@ -17,13 +17,13 @@ const arr = [
  * @param {Array} arr - The array to search.
  * @returns {number} - The index of the object with name "BMW", or -1 if not found.
  */
-const findByIndex = (arr) => {
+const findIndexOf = (arr) => {
   const index = arr.map((i) => i.name).indexOf("BMW");
   return index
 }
-console.log(findByIndex(arr)); // 👉️ 0
+console.log(findIndexOf(arr)); // 👉️ 0
 
-const findByIndex2 = (arr) => {
+const findIndexOf2 = (arr) => {
   // Map the array to an array of names
   const names = arr.map((i) => i.name);
   // Find the index of the first occurrence of "BMW"
@@ -31,4 +31,4 @@ const findByIndex2 = (arr) => {
   // Return the index, or -1 if not found
   return index;
 }
-console.log(findByIndex2(arr)); // 👉️ 2
+console.log(findIndexOf2(arr)); // 👉️ 2
