@@ -1,3 +1,4 @@
+let str = "HelLo WoRlD from nEw world"
 // METHOD : 1 VANILLA JS / PURE JS
 function removeDuplicateFromString(str) {
   let uniqueChars = '';
@@ -10,7 +11,7 @@ function removeDuplicateFromString(str) {
   }
   return uniqueChars;
 }
-console.log(removeDuplicateFromString("HelLo WoRlD from nEw world"));
+console.log(removeDuplicateFromString(str));
 
 
 
@@ -23,4 +24,13 @@ function removeDuplicateFromString2(str) {
   return result;
 }
 
-console.log(removeDuplicateFromString2("HelLo WoRlD from nEw world"));
+console.log(removeDuplicateFromString2(str));
+
+
+
+const removeDuplicateFromString3 = (str) => {
+  const uniqueChars = new Set(str);
+  console.log("str", uniqueChars);
+  return [...str].filter(char => uniqueChars.has(char)).join('');
+};
+console.log(removeDuplicateFromString3(str)); // Output: "HelLoWRDfrmnEwd"
