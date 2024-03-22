@@ -1,17 +1,28 @@
+/**
+ * Reverses a given string.
+ *
+ * @param {string} str - The input string to be reversed
+ * @return {undefined} No return value
+ */
+// reverse String using Recursion
 const reverseString = (str) => {
   if (str === '') {
     return '';
   }
   return reverseString(str.substr(1)) + str.charAt(0);
 }
-
-// reverse String using Recursion
-const reversed = reverseString('Hello');
-console.log(reversed); // Output: "olleH"
+console.log(reverseString('Hello')); // 👉️ "olleH"
 
 // reverse String using ES6
-const reverse = (str) => {
+const reverseString2 = (str) => {
   return str.split("").reverse().join("");
 }
+console.log(reverseString2("Hellos")); // 👉️ solleH
 
-console.log(reverse("Hellos"));
+const reverseString3 = (str) => {
+  let reversed = ""
+  for (const element of str) {
+    reversed += element
+  }
+}
+console.log(reverseString2("Hello"));
