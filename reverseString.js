@@ -11,13 +11,15 @@ const reverseString = (str) => {
   }
   return reverseString(str.substr(1)) + str.charAt(0);
 }
-console.log(reverseString('Hello')); // 👉️ "olleH"
+console.log(reverseString('Hello'));  // 👉️ "olleH"
+
 
 // reverse String using ES6
 const reverseString2 = (str) => {
   return str.split("").reverse().join("");
 }
-console.log(reverseString2("Hellos")); // 👉️ solleH
+console.log(reverseString2("Hello"));  // 👉️ solleH
+
 
 const reverseString3 = (str) => {
   let reversed = ""
@@ -25,4 +27,15 @@ const reverseString3 = (str) => {
     reversed += element
   }
 }
-console.log(reverseString2("Hello"));
+console.log(reverseString2("Hello"));  // 👉️ olleH
+
+
+const reverseString4 = (input) => {
+  let reversedData = ""
+  input = input.toString()
+  for (let i=input.length - 1; i>=0; i--){
+      reversedData = reversedData + input[i]
+  }
+  return reversedData
+}
+console.log(reverseString4("Hello"));  // 👉️ solleH
